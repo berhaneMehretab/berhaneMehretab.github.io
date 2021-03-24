@@ -1,0 +1,46 @@
+
+*{
+	font-family: Georgia, Garamond, serif;
+}
+
+p {
+/*font-family: sans-serif;*/
+color: green;
+}
+
+p::first-letter{
+	font-size: x-large;
+}
+body{
+	background-color: #add8e6;
+	/*background-image: url("../semmi.jpg");*/
+
+}
+a:hover{
+	color: hotpink;
+}
+
+/*favorites:{
+
+}
+*/
+h1, h2{
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	color: blue;
+}
+img:hover {
+  border-radius: 120%;
+  background-color: gray;
+   opacity: 0.5;
+}
+h2{
+	font-size: 30px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	text-align: left;
+	
+}
+
+
+        
