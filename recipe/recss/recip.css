@@ -1,0 +1,52 @@
+  h2 {
+
+    background-color: silver;
+    color :rgb(160, 121, 49);
+    text-decoration-line: underline;
+}
+#grandma {
+    text-align: center;
+}
+.one {
+    background-color: rgb(218, 233, 150);
+    margin: 0;
+}
+pre{
+    margin-right: 0;
+    text-align: right;
+}
+blockquote {
+    background-color : #FFFFA8;
+    font-style: italic;
+}
+.rightaligned{
+    text-align: right;
+}
+body {
+    background-color: white;
+    color : #404040;
+    font-size : 11pt;   
+    font-family : Georgia, Garamond, serif;
+}
+#main-heading {
+    font-size: 22pt;
+    text-align: center;
+}
+h1	{
+	color: #A4A400;
+	background-color: #F0F0F0;
+	font-family: "Lucia Sans Unicode", Helvetica, Arial, sans-serif;
+	text-align: left;
+	font-size: 18pt;
+	font-weight: normal;
+	text-decoration: underline;
+	/*letter-spacing: 0.25rem;*/
+	display: block;
+
+}
+a {
+	color: #A4A400;
+}
+.tightbackground {
+    background-color: #F0F0F0;
+}
