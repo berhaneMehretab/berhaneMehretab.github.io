@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("background.png");
+	background-repeat: repeat;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 8pt;
+}
+
+div#banner{
+	background-image: url("bannerbg.png");
+	text-align: center;
+}
+
+h1#movie-name{
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px #999999;
+	width: 25%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+div#main-content{
+	max-width: 800px;
+	margin: auto;
+	border: 4px gray solid;
+	border-radius: 20px;	
+	overflow: auto;	
+	position: relative;
+}
+
+div#validate-link{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+div#validate-link img{
+	opacity: 0.5;
+}
+
+div#rotten{
+	max-width: 550px;	
+	background-image: url("rbg.png");
+	color: red;
+	font-weight: bold;
+	font-size: 48pt;	
+	border-radius: 16px 0 0 0;	
+}
+
+div#rotten > img{
+	vertical-align: top;	
+	border-radius: 16px 0 0 0;	
+}
+
+#main-content > aside{
+	float: right;
+	max-width: 250px;	
+	background-color: #A2B964;
+}
+
+aside > dl{
+	margin: 10pt 10pt;	
+}
+
+aside > dl > dt {
+	margin-top: 10pt;
+	font-weight: bold;
+}
+
+aside > dl > dd > ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+div#reviews{
+	columns: 2;	
+	column-gap: 3%;
+	padding: 2% 3%;		
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+
+div#reviews p.quote-box{
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E8DC9B;
+	border-radius: 10px;
+	border: 2px gray solid;
+	padding: 8px;
+	overflow: auto;	
+	margin-top: 0;
+}
+
+p.quote-box > img{
+	float: left;
+	margin-right: 5px;
+}
+
+div#reviews p.reviewer-box{
+	margin-bottom: 20pt;
+	overflow: auto;
+	font-style: italic;
+
+}
+
+p.reviewer-box > img{
+	float: left;
+	margin-right: 5px;
+
+}
+
+div.group-box{
+	display: inline-block;	
+}
+
+footer{	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #A2B964;
+	width: 100%;
+}
+
+footer > p{
+	padding: 5px;
+	text-align: center;
+	margin: 0;
+}
