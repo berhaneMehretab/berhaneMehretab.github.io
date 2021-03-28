@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    margin-top: 100px;
 }
 .sub {
     max-width: auto;
@@ -28,3 +29,6 @@ div{
         #para{
             opacity: 0,5;
         }
+form {
+    margin-top: 150px;
+}

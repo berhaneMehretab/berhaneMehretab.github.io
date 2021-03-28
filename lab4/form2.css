@@ -1,7 +1,101 @@
+body{
+    background-color: black;
+    
+}
+ 
 form{
+    background-color: white;
     border: 1px solid black;
     padding: 10px;
-    
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: auto;
+    body{
+        background-color: black;
+        
+    }
+     
+    form{
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 150px;
+        width: auto;
+        
+        
+    }
+    #two{
+     position: relative;
+     left: 200px;
+     margin-top: -120px;
+    }
+    body{
+        background-color: black;
+        
+    }
+     
+    form{
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 150px;
+        width: auto;
+        
+        
+    }
+    #two{
+     position: relative;
+     left: 200px;
+     margin-top: -120px;
+    }
+     
+    ul li{
+        display: inline;
+        overflow: hidden;
+    }
+    #banner{
+        border: 1px solid black;
+        background-color: rgb(16, 16, 243);
+        
+    }
+    .left{
+        position: relative;
+        left: 750px;
+        
+    }
+    #button{
+        background-color: blue;
+    }
+    #selec{
+        padding: 1px;
+       
+    }
+    ul li{
+        display: inline;
+        overflow: hidden;
+    }
+    #banner{
+        border: 1px solid black;
+        background-color: lightblue;
+        
+    }
+    .left{
+        position: relative;
+        left: 750px;
+        
+    }
+    #button{
+        background-color: blue;
+    }
+    #selec{
+        padding: 1px;
+       
+    }
     
 }
 #two{
@@ -27,17 +121,7 @@ ul li{
 #button{
     background-color: blue;
 }
-
-.nav{
-    background-color: blue;
-    color: #fff;
-    list-style: none;
-   /* text-align: center;*/
-    padding: 30px 0 30px 0;
-    tex
-}
-
-.nav2 {
-    float: right;
-    padding-right: 20px;
+#selec{
+    padding: 1px;
+   
 }
