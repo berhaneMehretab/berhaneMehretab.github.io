@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a class="nav-n" href="#">MUM Golden Dome Market::: SRM System</a>
+            <a class="nav-n"href="#">| Products</a>
+            <a class="nav-n"href="#">| Suppliers</a>
+            <div class="nav-right">
+                Hello
+                <button>sign-out</button>
+            </div>
+   
+        </nav>
+    </header>
+   
+       <form class="fillform">
+           
+        <h3>New Product form</h3>
+           <div id="one">
+           <label class="move">Product Number</label><br>
+           <input type="text" class="move" name="number"><br>
+           <label for="name" class="move">Name</label><br>
+           <input type="text" class="move" name="name"id="name"><br>
+           <label for="" class="move">Unit Price</label><br>
+           <input type="number" placeholder="0.0" name="price" class="move"><br>
+        </div>
+        <div id="two">
+           <label class="move" for="">Quantity in stock</label><br>
+           <input type="number" class="move" name="quantity" placeholder="0"><br>
+        
+        <div id="three">
+           <label for="selector" class="move">Supplier</label><br>
+              <select class="supply" id="selector" name="supplier">
+                <option >trellers</option>
+                <option>car</option>
+                <option >house</option>
+            </select>
+        </div>
+            
+            <div id="four">
+           <label for="" class="move">Date supplied</label><br>
+           <input type="date" class="move" name="date"><br>
+           <small class="move">Enter a valid Date</small><br><br>
+           </div>
+           <!--<input class="move" type="button" value="Reset">
+           <input class="move" type="button" value="Cancel">-->
+           <input class="move" type="button" value="Add Product">
+
+        </div>
+
+</form>
+<script>
+    const fillform = document.querySelector('.fillform'),
+          form = document.querySelectorAll('.fillform'),
+          submitInput = form[0].querySelector('input[type="button"]');
+
+          function getDataForm(e){
+              e.preventDefault();
+               var formData = new FormData(form[0]);
+               
+              alert(formData.get('number') + '-' + formData.get('name') + '-' +
+              formData.get('price') + '-' + formData.get('quantity') + '-' + formData.get('selector') +'-' +
+              formData.get('supply') +'-' + formData.get('date'));
+          }
+
+          document.addEventListener('DOMContentLoaded', function(){
+           submitInput.addEventListener('click' , getDataForm, false);
+          },false);
+
+
+</script>
+
+   
+</body>
+</html>

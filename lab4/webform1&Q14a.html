@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+    <form class="sub" id="myForm"  onsubmit="register()" method="GET" >
+        <div>
+        <label>Email Address</label><br><br>
+        <input class="in" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        placeholder="Email Address"><br>
+        <p id="para">We'll never share your email with anyone else</p>
+
+        <input class="in" type="password" id="password" name="password" placeholder="password" 
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"><br><br>
+
+        <label >Url</label><br><br>
+        <input type="text" class="in" name="url"placeholder="url"pattern="https?://.+" 
+        title="please enter a valid url start with https"><br><br>
+
+        <label>Check Me Out</label>
+        <input type="checkbox" value="Check Me Out"><br><br>
+        <button type="submit" id="button" >Sumbit</button>
+        </div>
+    </form>
+
+    <script>
+        var form = document.getElementById('myForm');
+        form.onsubmit=function(e) {
+            e.preventDefault(e);
+                console.log(form.email.value , form.password.value , form.url.value );
+             
+            
+                alert(form.password.value  ); 
+                alert(form.url.value  );
+                
+            
+        };
+    </script>
+  <!-- <script>
+          document.getElementById("myForm").addEventListener('submit',register,false);
+        function register(){
+            //e.preventDefault();
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+            var url=document.getElementById('url').value;
+            alert(email);
+            console.log("hello");
+            console.log(email)
+        }
+      
+    </script>-->
+    <!--<script>
+        function myFunction() {
+          for(let i=0; i<elements.length; i++){ 
+          var x = document.getElementById("myForm").elements[i].value;
+          console.log(x);
+          document.getElementById("demo").innerHTML = x;
+          }
+        }-->
+  </script>
+        
+        
+        
+</body>
+</html> 
