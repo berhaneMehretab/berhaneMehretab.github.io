@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="js/form2.js"></script>
+    <!-- 1. External stylesheet-->
+    <link rel="stylesheet" href="css/form2.css" type="text/css">
+    <script defer src="js/app.js"></script>
+    <title>The South West-Regional Census</title>
+</head>
+<body>
+    <header>
+        <!-- TODO Add nav here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">MUM Golden Dome Market::: SRM System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Suppliers</a>
+                </li>
+
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                  <p id="time"></p>
+
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main>
+<!--body here-->
+
+<form id="main-form">
+    <div class="container">
+        <h2>New Product form</h2>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputprodNber4">Product Number</label>
+        <input type="text" class="form-control" id="inputprodNber4" placeholder="Product Number" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputqqt4">Quantity in stock</label>
+        <input type="number" class="form-control" id="inputqqt4" placeholder="Quantity" required>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputname4">Name</label>
+        <input type="text" class="form-control" id="inputname4" placeholder="Name" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label>Supplier</label>
+        <select  class="form-control" id="select" required>
+            <option value="">select</option>
+            <option value="Trailer">Trailer</option>
+            <option value="Car">Car</option>
+            <option value="House">House</option>
+        </select>
+        
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="inputprice4">Unit Price</label>
+        <input type="number" class="form-control" id="inputprice4" placeholder="Unit Price" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputdate4">Date Supplied</label>
+        <input type="date" class="form-control" id="inputdate4" placeholder="Date Supplied" required>
+        <small opacity="50%">Enter a valid date</small>
+      </div>
+    </div>
+    
+    <button type="reset" value="reset" class="btn btn-primary">Reset</button>
+    <button type="cancel" value="cancel" class="btn btn-primary">Cancel</button>
+    <button type="submit" value="submit" class="btn btn-primary">Add Product</button><br><br>
+
+    
+</form>
+    </main><br><br>
+
+    <div class="container">
+    <table class="table table-striped" id="main-table">
+        <h2>Product name Table</h2>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Quantity in stock</th>
+            <th scope="col">Supplier</th>
+            <th scope="col">Date Supplied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>12</td>
+            <td>Onyon</td>
+            <td>1</td>
+            <td>3</td>
+            <td>car</td>
+            <td>11/2/2020</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>12</td>
+            <td>Onyon</td>
+            <td>1</td>
+            <td>3</td>
+            <td>car</td>
+            <td>11/2/2020</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>12</td>
+            <td>Onyon</td>
+            <td>1</td>
+            <td>3</td>
+            <td>car</td>
+            <td>11/2/2020</td>
+          </tr>
+        </tbody>
+        
+      </table>
+</div>
+    <!-- TODO Add footer content here-->
+    <footer>
+        
+        <div>
+            <span id="footerName">O. Kalu ::: CS472-WAP</span>
+            <span id="footerTime">&copy; April 2020</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

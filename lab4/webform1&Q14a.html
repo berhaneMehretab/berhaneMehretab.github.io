@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="form.css" type="text/css" rel="stylesheet">
+    <script src="../lab4/js/form1.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <title>Document</title>
-
-
 
 </head>
 <body>
@@ -22,7 +23,7 @@
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"><br><br>
 
         <label >Url</label><br><br>
-        <input type="text" class="in" name="url"placeholder="url"pattern="https?://.+" 
+        <input type="text" class="in" id="urll" name="url"placeholder="url"pattern="https?://.+" 
         title="please enter a valid url start with https"><br><br>
 
         <label>Check Me Out</label>
@@ -30,8 +31,8 @@
         <button type="submit" id="button" >Sumbit</button>
         </div>
     </form>
-
-    <script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script>
         var form = document.getElementById('myForm');
         form.onsubmit=function(e) {
             e.preventDefault(e);
@@ -43,7 +44,7 @@
                 
             
         };
-    </script>
+    </script> -->
   <!-- <script>
           document.getElementById("myForm").addEventListener('submit',register,false);
         function register(){

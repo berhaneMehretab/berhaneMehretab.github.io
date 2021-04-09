@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_8</title>
+    <script>
+        //Qeustion_6
+        const count = (function(){
+             let counter = 0;
+             function getCounter(){
+                 return counter;
+             }
+             return{
+                 value:getCounter,
+                
+                 add:function(){
+                     counter += 1;
+                    // console.log("add:" + counter);
+                 },
+                 reset:function(){
+                   // console.log("reset: " + counter);
+                     counter = 0;
+                    
+                 }
+             }
+})();
+count.add();
+console.log(count.value());
+count.add();
+console.log(count.value());
+count.reset();
+console.log(count.value());
+///////////////////////////////////////
+//question_8
+const make_adder = (function(inc) {
+           let counter = 0;
+           
+          return {
+                   function(inc){
+                        counter += inc;    
+                  },
+                  getCounter :function(){
+                      return counter;
+                  }
+                    
+         }
+})();
+///////////////////////////////////////////////
+//Question_10
+const employee = (function(){
+
+let name = null;
+let age = 0;
+let salary = 0;
+
+function getName(){
+    return name;
+}
+function getSalary(){
+     return salary
+}
+function getAge(){
+    age += 1;
+}
+function setAge(newAge){
+    age = newAge;
+}
+function publicGetAge(){
+         getAge();
+}
+function setSalary (newSalary){
+    salary = newSalary;
+}
+return{
+setAge: setAge,
+setSalary: setSalary,
+setName : function(newName){
+    name = newName;
+},
+    
+
+increaseSalary:function(percentage){
+                 let sal = getSalary();
+                 sal += sal + (1 + percentage/100);
+              },
+incrementAge: function(){
+             setAGe(getAge() + 1);
+
+}
+
+}
+      
+
+})();
+employee.setAge(50);
+employee.setSalary(300);
+employee.increaseSalary(0.5);
+employee.incrementAge();
+employee.setName("ALex")
+////////////////////////////////////////////////
+//Question_11
+Employee.address = "";
+Employee.setAddress = function(addr) {
+ this.address = addr;
+};
+Employee.getAddress = function() {
+ return this.address
+};
+/////////////////////////////////
+    </script>
+</head>
+<body>
+    <pre>
+ Q1)
+   undefined
+   8
+   9
+   10
+   1
+
+Q2) 
+
+ Global Scope : all scripts and functions in a web page 
+ can access it.
+ Local scope :  is restriced to  local, for Example a variable 
+ declared inside a functionor block can only be accessed from with in it.
+
+Q3)
+
+a)No   b)Yes   c)No  d)Yes  e)Yes
+
+Q4)
+    81
+    25
+Q5)
+    10
+
+Q8)
+ 
+  In Question 6 the definition of add() , Counter is the free variable.
+  Free variable is a variable that is not locally defined and is not passed as parameter.
+
+Q9)
+
+  Using Module pattern we can clear all name of functions from  the global name space.This
+means we create a scope for the names. 
+
+
+    </pre>
+</body>
+</html>
